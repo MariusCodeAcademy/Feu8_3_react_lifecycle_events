@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='app'>
       <h1>Hello Vite</h1>
-      <Counter />
+      <Counter what='Pushups' />
       <CounterList />
       {false && <CardList />}
     </div>

@@ -4,8 +4,8 @@ import Counter from './Counter';
 function CounterList() {
   return (
     <Grid cols='3'>
-      <Counter />
-      <Counter />
+      <Counter what='Pullups' />
+      <Counter what={'Km ran'} />
       <Counter />
     </Grid>
   );
