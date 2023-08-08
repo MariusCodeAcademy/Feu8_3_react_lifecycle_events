@@ -6,7 +6,7 @@ function Counter() {
   // jei reikia kad reiksme atsivaizduotu jsxe, paprastas kintamasis netinka
   // let countNum = 25;
   // sukuriam State pavadinimu countNum ir jo atnaujinimo funkcija
-  const [countNum, setCountNum] = useState(25);
+  const [countNum, setCountNum] = useState(5);
 
   function goUp() {
     console.count('goUp');
@@ -17,6 +17,7 @@ function Counter() {
     setCountNum(countNum + 1);
     // console.log('countNum ===', countNum);
   }
+  console.log(`countNum yra ${countNum > 0 ? 'teigiamas' : 'neigiamas'}`);
 
   // goDown() - kuri pamazina state 1
   function goDown() {
