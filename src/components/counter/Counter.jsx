@@ -2,6 +2,9 @@ import { useState } from 'react';
 import Grid from '../UI/Grid';
 
 function Counter(props) {
+  // jei skaicius yra daugaiu uz 5 tai jis yra zalias
+  // jei 0 - 5 tai raudonas
+
   console.log('<Counter generated />');
   // jei reikia kad reiksme atsivaizduotu jsxe, paprastas kintamasis netinka
   // let countNum = 25;
@@ -33,12 +36,14 @@ function Counter(props) {
     setCountNum(0);
   }
 
+  const redOrGreen = countNum > 5 ? 'green' : 'red';
+
   return (
     <div className='counter'>
       {/* <h2>{props.what}</h2> */}
       <h2>{props.what ? props.what : 'Label'}</h2>
       {/* <h2>{props.what ?? 'Label'}</h2> */}
-      <p className='counterValue'>{countNum}</p>
+      <p className={`${redOrGreen} counterValue`}>{countNum}</p>
       <Grid cols='3'>
         <button onClick={goUp}>UP</button>
         {countNum > 0 && (
