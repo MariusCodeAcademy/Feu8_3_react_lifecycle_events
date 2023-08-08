@@ -24,6 +24,10 @@ function Counter() {
     setCountNum(countNum - 1);
   }
 
+  function reset() {
+    setCountNum(0);
+  }
+
   return (
     <div className='counter'>
       <h2>Label</h2>
@@ -31,7 +35,7 @@ function Counter() {
       <Grid cols='3'>
         <button onClick={goUp}>UP</button>
         <button onClick={goDown}>Down</button>
-        <button>Reset</button>
+        <button onClick={reset}>Reset</button>
       </Grid>
     </div>
   );
