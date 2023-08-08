@@ -6,3 +6,15 @@
 2. paspaudus mygtuka antra karta klase nuimama ir remelis pasidaro nebespecial
 3. pakeisti teksta "Make special" i "Make normal" priklausomai pagal tai ar kortele
    special ar ne.
+
+## PersonList.jsx
+
+1. prideti saraso apacioje informacija atitinkamuose taguose:
+
+   1.1 - kiek viso yra zmoniu
+
+   1.2 - kiek yra moteru
+
+   1.3 - kiek asmenu yra vyresniu uz 37
+
+   1.4 - asmeni kurio vardas ilgiausias
