@@ -20,3 +20,11 @@
    1.4 - asmeni kurio vardas ilgiausias
 
    1.5 - isvesti i atskira html elementa visus hobius atskirtus kableliu
+
+## Our team sekcija
+
+![](assets/2023-08-08-11-45-52.png)
+
+1. pasidaryti visa sekcija su komponentais (css mazdaug, labai neuzsizaiskit)
+2. generuoti elementus is objektu masyvo.
+3. padaryti kad paspaudus ant korteles jos fonas taptu tamsus o tekstas sviesus.
