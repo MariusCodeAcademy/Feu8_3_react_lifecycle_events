@@ -19,14 +19,19 @@ function Counter() {
   }
 
   // goDown() - kuri pamazina state 1
+  function goDown() {
+    console.log('down');
+    setCountNum(countNum - 1);
+  }
 
   return (
     <div className='counter'>
       <h2>Label</h2>
       <p className='counterValue'>{countNum}</p>
-      <Grid cols='2'>
+      <Grid cols='3'>
         <button onClick={goUp}>UP</button>
-        <button>Down</button>
+        <button onClick={goDown}>Down</button>
+        <button>Reset</button>
       </Grid>
     </div>
   );
