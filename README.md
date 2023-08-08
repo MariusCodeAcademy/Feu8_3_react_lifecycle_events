@@ -1,8 +1,8 @@
-# React + Vite
+# Praktika
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Person.jsx prideti mygtuka "Make special"
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. mygtukas turetu uzdeti klase kuri uzdeda 5px geltona remeli
+2. paspaudus mygtuka antra karta klase nuimama ir remelis pasidaro nebespecial
+3. pakeisti teksta "Make special" i "Make normal" priklausomai pagal tai ar kortele
+   special ar ne.
