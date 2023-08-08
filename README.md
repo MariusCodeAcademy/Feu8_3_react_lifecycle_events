@@ -18,3 +18,5 @@
    1.3 - kiek asmenu yra vyresniu uz 37
 
    1.4 - asmeni kurio vardas ilgiausias
+
+   1.5 - isvesti i atskira html elementa visus hobius atskirtus kableliu
