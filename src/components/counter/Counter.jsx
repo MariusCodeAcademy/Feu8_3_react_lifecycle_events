@@ -6,7 +6,7 @@ function Counter(props) {
   // jei reikia kad reiksme atsivaizduotu jsxe, paprastas kintamasis netinka
   // let countNum = 25;
   // sukuriam State pavadinimu countNum ir jo atnaujinimo funkcija
-  const [countNum, setCountNum] = useState(5);
+  const [countNum, setCountNum] = useState(0);
 
   function goUp() {
     console.count('goUp');
@@ -22,6 +22,10 @@ function Counter(props) {
   // goDown() - kuri pamazina state 1
   function goDown() {
     console.log('down');
+    // neleisti buti neigiamu
+    if (countNum < 1) {
+      return;
+    }
     setCountNum(countNum - 1);
   }
 
@@ -37,8 +41,13 @@ function Counter(props) {
       <p className='counterValue'>{countNum}</p>
       <Grid cols='3'>
         <button onClick={goUp}>UP</button>
-        <button onClick={goDown}>Down</button>
-        <button onClick={reset}>Reset</button>
+        {countNum > 0 && (
+          <button disabled={countNum < 1} onClick={goDown}>
+            Down
+          </button>
+        )}
+        {/* rodyti reset tik jei skaicius nelygus 0 */}
+        {countNum !== 0 && <button onClick={reset}>Reset</button>}
       </Grid>
     </div>
   );
