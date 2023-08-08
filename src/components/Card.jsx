@@ -1,4 +1,5 @@
 function Card(props) {
+  console.log('<Card />');
   // console.log('props ===', props);
   // const heading = props.heading;
   // const text = props.text;
