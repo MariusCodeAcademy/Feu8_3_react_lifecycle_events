@@ -30,3 +30,9 @@
 .green {
   color: green;
 }
+
+.special {
+  border-width: 5px;
+  border-color: tomato;
+  background-color: pink;
+}
