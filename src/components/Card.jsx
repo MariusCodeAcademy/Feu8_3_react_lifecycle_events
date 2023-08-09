@@ -8,6 +8,12 @@ function Card(props) {
     setIsItSpecial(true);
   }
 
+  function toggleSpecial() {
+    // turim padaryti true jei yra false, false jei yra true;
+    // setIsItSpecial(isItSpecial ? false : true);
+    setIsItSpecial(!isItSpecial);
+  }
+
   const computeClass = isItSpecial ? 'special card' : 'card';
   console.log('computeClass ===', computeClass);
 
@@ -16,7 +22,9 @@ function Card(props) {
     <div className={computeClass}>
       <h3 className='cardTitle'>{heading}</h3>
       <p className='cardText'>{text}</p>
-      <button onClick={makeSpecial}>Make special</button>
+      <button onClick={toggleSpecial}>
+        Make {isItSpecial ? 'normal' : 'special'}
+      </button>
     </div>
   );
 }
