@@ -1,5 +1,7 @@
+import { useState } from 'react';
+
 function Card(props) {
-  console.log('<Card />');
+  const [isItSpecial, setIsItSpecial] = useState();
   // console.log('props ===', props);
   // const heading = props.heading;
   // const text = props.text;
@@ -8,6 +10,7 @@ function Card(props) {
     <div className='card'>
       <h3 className='cardTitle'>{heading}</h3>
       <p className='cardText'>{text}</p>
+      <button>Make special</button>
     </div>
   );
 }
