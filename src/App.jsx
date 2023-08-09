@@ -2,12 +2,7 @@ import './styles/index.css';
 import './styles/App.css';
 import CardList from './components/CardList';
 import CounterList from './components/counter/CounterList';
-
-const cardsData = [
-  { id: 1, title: 'HTML', body: 'Is the sturture of web' },
-  { id: 2, title: 'CSS', body: 'Is the style of web' },
-  { id: 3, title: 'JS', body: 'Is the interactivity' },
-];
+import { cardsData } from './assets/db';
 
 function App() {
   console.log('<App />');
