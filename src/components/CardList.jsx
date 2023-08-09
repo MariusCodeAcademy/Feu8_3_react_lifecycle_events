@@ -8,7 +8,18 @@ function CardList(props) {
     <Card key={cObj.id} heading={cObj.title} text={cObj.body} />
   ));
 
-  return <Grid cols='3'>{cardListJsx}</Grid>;
+  const kiekCorteliu = props.list.length;
+
+  const titleString = props.list.map((cObj) => cObj.title).join(', ') + '.';
+  console.log('titleString ===', titleString);
+
+  return (
+    <div>
+      <Grid cols='4'>{cardListJsx}</Grid>
+      <h3>Viso korteliu: {kiekCorteliu}</h3>
+      <p className='tags'>All titles: {titleString}</p>
+    </div>
+  );
 }
 
 export default CardList;
